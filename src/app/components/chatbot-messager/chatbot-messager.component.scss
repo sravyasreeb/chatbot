@@ -1,0 +1,75 @@
+:host {
+    background: linear-gradient(
+        135deg,
+        rgb(48, 71, 236) 0%,
+        rgb(15, 34, 167) 100%
+      );
+  .icon-small {
+    font-size: 5px;
+    padding-right: 10px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-info {
+    margin-left: 10px;
+    overflow: hidden;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-title {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-sub-title {
+    display: flex;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: unset;
+  }
+
+  .msg-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 64px);
+    box-sizing: border-box;
+  }
+
+  .text-container {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .query {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .user-msg-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
+  .bot-msg-response {
+    padding-left: 10px;
+    .response-card {
+      display: flex;
+      width: 60%;
+      margin: 10px 0px 0px 10px;
+    }
+  }
+
+}

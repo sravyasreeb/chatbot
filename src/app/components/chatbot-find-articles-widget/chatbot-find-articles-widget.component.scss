@@ -1,0 +1,9 @@
+:host {
+    border-top: 2px solid rgb(48, 71, 236);
+    border-radius: 5px;
+    .search-input-container {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+}

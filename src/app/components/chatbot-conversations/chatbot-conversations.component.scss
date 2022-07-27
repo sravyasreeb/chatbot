@@ -1,0 +1,25 @@
+:host {
+    .conversations-card {
+        max-height: 250px;
+        height: 100%;
+        border-top: 2px solid rgb(48, 71, 236);
+        border-radius: 5px;
+    }
+      
+    .content-container {
+        max-height: 150px;
+        padding: 0px !important;
+        overflow-y: scroll;
+    }
+      
+    .action-button {
+        color: rgb(48, 71, 236);
+        border: 1px solid rgb(48, 71, 236);
+        border-radius: 20px;
+    }
+    
+    mat-card-content {
+        margin: 0 -16px 0 -16px;
+    }
+}
+  

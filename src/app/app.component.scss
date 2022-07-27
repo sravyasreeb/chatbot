@@ -1,0 +1,11 @@
+.bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+::ng-deep .custom-dialog-container .mat-dialog-container {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}

@@ -1,0 +1,32 @@
+<mat-card class="search-articles-card">
+    <div class="card-header">
+      <button mat-button (click)="onNavigationClick()">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <mat-card-title>Browse collections</mat-card-title>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-card-content class="content-container">
+      <mat-selection-list [multiple]="false">
+        <mat-list-option *ngFor="let message of messages" [value]="message">
+          <h3 matLine>{{message.query}}</h3>
+          <p matLine>
+            <span class="demo-2">{{message.resolution}} </span>
+          </p>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+      <div class="action-buttons-container">
+        <div class="action-title">
+            <mat-icon>groups_2</mat-icon>
+            <span>The team can help if needed</span>
+        </div>
+        <button mat-stroked-button color="primary" class="action-button" (click)="onSendClick()" (keyup.enter)="onSendClick()">
+            <mat-icon>send</mat-icon> Send us a message
+          </button>
+      </div>  
+      
+    </mat-card-actions>
+  </mat-card>

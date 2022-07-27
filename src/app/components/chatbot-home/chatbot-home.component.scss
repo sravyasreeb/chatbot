@@ -1,0 +1,28 @@
+.chatbot-header {
+    position: relative;
+    min-height: 75px;
+    color: white;
+    height: 256px;
+    transition: height 160ms ease-out 0s;
+    background: linear-gradient(
+      135deg,
+      rgb(48, 71, 236) 0%,
+      rgb(15, 34, 167) 100%
+    );
+}
+
+.header-container {
+    padding: 24px;
+    .logo {
+        height: 32px;
+        padding-bottom: 16px;
+    }
+}
+
+.widget-container {
+    padding: 25px 10px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 20%) 0px 21px 4px -20px inset;
+}

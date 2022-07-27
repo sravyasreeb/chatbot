@@ -1,0 +1,24 @@
+<mat-card class="conversations-card">
+    <mat-card-header>
+      <mat-card-title>Your conversations</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="content-container">
+      <mat-selection-list [multiple]="false">
+        <mat-list-option *ngFor="let message of messages" [value]="message">
+          <mat-icon matListAvatar>person</mat-icon>
+          <h3 matLine>Operator. {{message.elaspedTime}} ago</h3>
+          <p matLine>
+            <span> operator: </span>
+            <span class="demo-2">{{message.content}} </span>
+          </p>
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+      <button mat-stroked-button color="primary" class="action-button" (click)="onSendClick()" (keyup.enter)="onSendClick()">
+        <mat-icon>send</mat-icon> Send us a message
+      </button>
+    </mat-card-actions>
+  </mat-card>

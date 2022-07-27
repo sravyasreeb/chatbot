@@ -1,0 +1,23 @@
+<div class="chatbot-header">
+    <div class="header-container">
+        <div >
+            <img
+              src="https://downloads.intercomcdn.com/i/o/37840/636907e0fb5448742836e4c5/1bb87d41d15fe27b500a4bfcde01bb0e.png"
+              alt="Intercom logo" class="logo"
+            />
+          </div>
+          <h1>
+            <div style="font-size: 32px; max-width: 296px">
+              <span>Hi 👋</span>
+            </div>
+          </h1>
+          <h2>
+            <span class="egu72k4 intercom-3vlnpr">We help your business grow by connecting you to your customers.</span>
+          </h2>
+    </div>
+</div>
+
+<div class="widget-container">
+  <app-chatbot-conversations class="widget" (viewType)="navigateToPageByViewType($event)"></app-chatbot-conversations>
+  <app-chatbot-find-articles-widget  (viewType)="navigateToPageByViewType($event)"></app-chatbot-find-articles-widget>
+</div>

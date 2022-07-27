@@ -1,0 +1,10 @@
+<ng-container [ngSwitch]="true">
+    <app-chatbot-search-articles (viewType)="changeSelection($event)" *ngSwitchCase="viewType === 'SEARCH_ARTICLES'"></app-chatbot-search-articles>
+    <app-chatbot-messager (viewType)="changeSelection($event)" *ngSwitchCase="viewType === 'MESSANGER'" ></app-chatbot-messager>
+    <app-chatbot-home (viewType)="changeSelection($event)" *ngSwitchCase="viewType === 'HOME_PAGE'"></app-chatbot-home>
+    <app-chatbot-home (viewType)="changeSelection($event)" *ngSwitchDefault></app-chatbot-home>
+</ng-container>
+<ng-template #messagerTemplate>
+    
+</ng-template>
+
